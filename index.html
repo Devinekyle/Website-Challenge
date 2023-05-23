@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Document</title>
+</head>
+<body>
+  <script src="main.js"></script>
+
+  <div id="NavigationBar">
+    <img id="navButton" src="Pictures/navbutton.png" width="100%" onclick="navBarToggle()">
+    <div id="navBox">
+      <button id="clearLocal">Clear</button>
+    </div>
+  </div>
+
+  <div class="box">
+    <form class="formClass">
+      <p>Task Add</p>
+
+      <input type="text" id="text">
+
+      <button id="buttonSubmit">Submit </button>
+
+    </form>
+  </div>
+
+  <div class="box">
+    <form class="formClass">
+      <p>Task Complete</p>
+      <button id="buttonDelete">Complete Tasks </button>
+    </form>
+  </div>
+
+  <div id="taskBox">
+    <h1>To Do</h1>
+    <ol id="TaskList">
+
+    </ol>
+  </div>
+  <div id="taskCompleteBox">
+    <h1>Completed Tasks</h1>
+    <ol id="completedTasks">
+
+    </ol>
+  </div>
+</body>
+</html>
