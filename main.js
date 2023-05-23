@@ -133,18 +133,16 @@ var navBarStatus = false;
 
 
 
-const navBarToggle = () => {
-  if(navBarStatus == false) {
-    navBarStatus = true;
+const navBarEnable = () => {
     document.getElementById("NavigationBar").style.width = "15%";
+    document.getElementById("NavigationBar").style.backgroundColor  = "#00cc00";
     document.getElementById("navBox").style.visibility = "visible";
-  }
-  else {
-    navBarStatus = false;
-    document.getElementById("NavigationBar").style.width = "20px";
-    document.getElementById("navBox").style.visibility = "hidden";
-  }
 }
 
+const navBarDisable = () => {
+  document.getElementById("NavigationBar").style.width = "20px";
+  document.getElementById("NavigationBar").style.backgroundColor  = "black";
+  document.getElementById("navBox").style.visibility = "hidden"
+}
 
 

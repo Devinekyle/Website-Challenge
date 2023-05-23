@@ -10,8 +10,8 @@
 <body>
   <script src="main.js"></script>
 
-  <div id="NavigationBar">
-    <img id="navButton" src="Pictures/navbutton.png" width="100%" onclick="navBarToggle()">
+  <div id="NavigationBar" onmouseover="navBarEnable()" onmouseout="navBarDisable()">
+    <img id="navButton" src="Pictures/navbutton.png" width="100%">
     <div id="navBox">
       <button id="clearLocal">Clear</button>
     </div>
